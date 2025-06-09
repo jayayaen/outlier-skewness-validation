@@ -1,5 +1,6 @@
 ## Outlier and Skewness Validation Pipeline
-Python pipeline to detect and transform skewed features, validate outliers, and produce logs and plots.
+This project provides a robust, production-ready Python pipeline to **detect and address skewness and outliers** in numeric datasets. <br/>
+It is designed to streamline the data validation process before statistical analysis or machine learning model development.
 
 
 A clean, PEP8-compliant Python pipeline to:
@@ -19,16 +20,6 @@ This pipeline:
 5. **Logs outliers** to CSV files (raw + sparse format)
 6. **Generates visual boxplots** for inspection
 7. **Outputs a summary** of all validations
-
-
-This pipeline:
-1. Identifies highly skewed numeric features using statistical skewness.
-2. Applies `np.log1p` transformation to reduce skew (handle non-normal distributions).
-3. Defines safe ranges for each feature using percentiles (1st to 99th).
-4. Validates each feature’s values against these ranges.
-5. Logs outliers (in full and sparse format) to CSV files.
-6. Generates boxplots for visual inspection of each feature.
-7. Produces a summary report of outlier counts per feature.
 
 This helps ensure your numeric features are:
 - More normally distributed (for modeling),
