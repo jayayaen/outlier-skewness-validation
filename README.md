@@ -48,3 +48,6 @@ This helps ensure your numeric features are:
 - Boxplots for visual validation
 
  For medical, finance, or ML applications — plug in your dataset and go!
+
+Author - Jayanthan Jayaratnam <br/>
+[LinkedIn](https://www.linkedin.com/in/aj41/) | [GitHub](https://github.com/jayayaen)
