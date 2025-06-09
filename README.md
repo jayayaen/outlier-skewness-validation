@@ -12,6 +12,16 @@ A clean, PEP8-compliant Python pipeline to:
 ### What Does This Code Do?
 
 This pipeline:
+1. **Identifies highly skewed numeric features** using statistical skewness
+2. **Applies `np.log1p` transformation** to reduce skew
+3. **Defines safe ranges** using either percentiles or fixed buffer
+4. **Validates values** for each feature against defined bounds
+5. **Logs outliers** to CSV files (raw + sparse format)
+6. **Generates visual boxplots** for inspection
+7. **Outputs a summary** of all validations
+
+
+This pipeline:
 1. Identifies highly skewed numeric features using statistical skewness.
 2. Applies `np.log1p` transformation to reduce skew (handle non-normal distributions).
 3. Defines safe ranges for each feature using percentiles (1st to 99th).
